@@ -207,7 +207,7 @@ body {
   @media (max-width: 768px) {
     .home__bannerWrap {
       display: block;
-      height: 100%;
+      height: auto;
       padding: 30% 0 0; } }
 
 .home__bannerInner {
