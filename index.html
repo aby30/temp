@@ -1,0 +1,105 @@
+
+<html>
+  <head>
+    <title>Pankhuri</title>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no"/>
+    <meta name="theme-color" content="#931AD0"/>
+    <meta name="apple-mobile-web-app-status-bar-style" content="#931AD0"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"/>
+    <link rel="stylesheet" type="text/css" href="styles/index.css?id1"/>
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="js/scripts.js"></script>
+  </head>
+  <body>
+    <div class="home">
+      <div class="home__wrap">
+        <div class="home__inner">
+          <div class="home__bannerWrap">
+            <!--header Inculde-->
+            <div class="header__main">
+              <div class="header__inner"><span class="header__logo"><img src="images/icons/logo.svg"/></span><span class="header__menu">
+                  <input type="checkbox" id="triggerMenu" onClick="showMenu();"/>
+                  <label for="triggerMenu">
+                    <div class="bar-wrap"><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></div>
+                  </label>
+                  <div class="header__menuMain">
+                    <div class="header__menuInner">
+                      <div class="header__aboutWrap">
+                        <div class="header__aboutInner">
+                          <div class="header__aboutTitle">About Pankhuri </div>
+                          <div>
+                            <p>Our goal at Pankhuri is simple, make wedding planning a breeze for even the busiest soon-to-wed couples. The expert team at Pankhuri specialises in every aspect of what’s required for weddings. Whether you dream of destination or going local; whether you want to be a chic couple or royal ones; or even when your sister/brother/friend is getting married - any and all how-to questions are answered. Pankhuri Weddings Company connects brides, grooms, their parents, friends and relatives to right vendors and ideas.</p>
+                            <p>Begin your most magical journey.</p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="header__menuList">
+                        <div class="header__menuListItem"><a href="https://www.facebook.com/pankhuri.weddings/" target="_blank" onClick="hideMenu();">Facebook</a></div>
+                        <div class="header__menuListItem"><a href="https://www.instagram.com/pankhuri.weddings/" target="_blank" onClick="hideMenu();">Instagram</a></div>
+                      </div>
+                    </div>
+                  </div></span></div>
+            </div>
+            <div class="home__bannerInner">
+              <div class="home__subMsg">Stressed out with a lot of questions for your <span>Wedding Day?</span></div>
+              <div class="home__msg"><span id="questions">Where can i buy the best Wedding dress?</span><span class="cursor blinkingCursor"></span></div>
+              <div class="home__cta">
+                <button type="button" onClick="showMsgModal();">Ask Pankhuri</button>
+              </div>
+              <div class="home__services">
+                <div class="home__servicesIcons"><span><img src="images/icons/menDress.svg"/></span><span><img src="images/icons/womenDress.svg"/></span><span><img src="images/icons/ring.svg"/></span><span><img src="images/icons/deco.svg"/></span><span><img src="images/icons/drinks.svg"/></span><span><img src="images/icons/makeup.svg"/></span><span><img src="images/icons/camera.svg"/></span><span><img src="images/icons/videoCam.svg"/></span><span><img src="images/icons/voilin.svg"/></span><span><img src="images/icons/cake.svg"/></span></div>
+              </div>
+              <div class="home__cta mob" onclick="showMsgModal();">
+                <button type="button">Ask Pankhuri</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modalbox modalbox--plain msgModal" id="msgModal">
+      <div class="modalbox__content">
+        <div class="modalbox__contentInner">
+          <div class="modalbox__header"></div>
+          <div class="modalbox__body msgModal__body">
+            <div class="msgModal__close" onclick="closeMsgModal();"><img src="images/icons/error.svg"/></div>
+            <div class="msgModal__inner">
+              <div class="msgModal__col">
+                <div class="msgModal__colContent1" id="msgModal__colContent1">
+                  <div class="msgModal__colTitle">Let's start talking
+                    <div>Whatsapp me on</div>
+                  </div>
+                  <div class="msgModal__compContact">
+                    <div>+91 63640 47530</div><a class="msgModal__whatsappLink" href="https://wa.me/916364047530" target="_blank">wa.me/916364047530</a>
+                  </div>
+                  <div class="msgModal__mode">
+                    <div class="msgModal__mode1">
+                      <input type="text" placeholder="Enter your number"/>
+                      <div class="msgModal__modeSend" onclick="showSuccess();"><img src="images/icons/send.svg"/></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="msgModal__colContent3" id="msgModal__colContent3">
+                  <div class="msgModal__sentSuccessTitle">Awesome!</div>
+                  <div class="msgModal__sentSuccessSubTitle">We'll get back to you with best suggestions to make your day special</div>
+                </div>
+              </div>
+              <div class="msgModal__col">
+                <div class="msgModal__whatsapp">
+                  <div class="msgModal__whatsappIcon"><img src="images/icons/whatsappWOtxt.png"/></div><a class="msgModal__whatsappLink" href="https://wa.me/916364047530" target="_blank">wa.me/916364047530</a>
+                </div>
+                <div class="msgModal__whatsappQr"><img src="images/whatsappQr.png"/></div>
+                <div class="msgModal__instruction">Scan QR code 
+                  <div>to start chatting on WhatsApp web</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="modalbox__footer"></div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
